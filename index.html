@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta Vapes Shop</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d0d1a;
+            color: #ffffff;
+        }
+        header {
+            background-color: #1a1a2e;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #7f5af0;
+        }
+        section {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .vape-card {
+            background-color: #1a1a2e;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px #7f5af0;
+        }
+        .vape-card img {
+            max-width: 100%;
+            border-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .vape-card h2 {
+            margin: 15px 0 5px;
+            color: #7f5af0;
+        }
+        .vape-card p {
+            margin: 5px 0 15px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        form input, form select, form textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #7f5af0;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        form button:hover {
+            background-color: #5a42b1;
+        }
+        footer {
+            background-color: #1a1a2e;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+    <script>
+        function showAlert() {
+            alert("✅ Pedido enviado correctamente. Nos pondremos en contacto pronto.");
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Beta Vapes Shop</h1>
+    <p>Los mejores precios en Neuquén Capital. ¡Próximamente envíos a todo el país!</p>
+</header>
+
+<section>
+    <!-- Ignite V150 -->
+    <div class="vape-card">
+        <img src="https://i.imgur.com/9UJr5NH.jpg" alt="Ignite V150">
+        <h2>Ignite V150</h2>
+        <p>15k puffs - $23.000</p>
+        <form action="https://formsubmit.co/vapesbeta@gmail.com" method="POST" onsubmit="showAlert()">
+            <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+            <input type="text" name="direccion" placeholder="Dirección completa" required>
+            <input type="tel" name="telefono" placeholder="Teléfono" required>
+            <input type="number" name="cantidad" placeholder="Cantidad" required>
+            <textarea name="comentario" placeholder="Comentario (opcional)"></textarea>
+            <input type="hidden" name="modelo" value="Ignite V150">
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </div>
+
+    <!-- Ignite V250 -->
+    <div class="vape-card">
+        <img src="https://i.imgur.com/tmto5BB.jpg" alt="Ignite V250">
+        <h2>Ignite V250</h2>
+        <p>25k puffs - $30.000</p>
+        <form action="https://formsubmit.co/vapesbeta@gmail.com" method="POST" onsubmit="showAlert()">
+            <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+            <input type="text" name="direccion" placeholder="Dirección completa" required>
+            <input type="tel" name="telefono" placeholder="Teléfono" required>
+            <input type="number" name="cantidad" placeholder="Cantidad" required>
+            <textarea name="comentario" placeholder="Comentario (opcional)"></textarea>
+            <input type="hidden" name="modelo" value="Ignite V250">
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </div>
+
+    <!-- Geekbar Pulse X -->
+    <div class="vape-card">
+        <img src="https://i.imgur.com/CXbgK7o.jpg" alt="Geekbar Pulse X">
+        <h2>Geekbar Pulse X</h2>
+        <p>25k puffs - $27.000</p>
+        <form action="https://formsubmit.co/vapesbeta@gmail.com" method="POST" onsubmit="showAlert()">
+            <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+            <input type="text" name="direccion" placeholder="Dirección completa" required>
+            <input type="tel" name="telefono" placeholder="Teléfono" required>
+            <input type="number" name="cantidad" placeholder="Cantidad" required>
+            <textarea name="comentario" placeholder="Comentario (opcional)"></textarea>
+            <input type="hidden" name="modelo" value="Geekbar Pulse X">
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </div>
+
+    <!-- Elfbar 40k -->
+    <div class="vape-card">
+        <img src="https://i.imgur.com/GfZJQZz.jpg" alt="Elfbar 40k">
+        <h2>Elfbar 40k</h2>
+        <p>40k puffs - $40.000</p>
+        <form action="https://formsubmit.co/vapesbeta@gmail.com" method="POST" onsubmit="showAlert()">
+            <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+            <input type="text" name="direccion" placeholder="Dirección completa" required>
+            <input type="tel" name="telefono" placeholder="Teléfono" required>
+            <input type="number" name="cantidad" placeholder="Cantidad" required>
+            <textarea name="comentario" placeholder="Comentario (opcional)"></textarea>
+            <input type="hidden" name="modelo" value="Elfbar 40k">
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </div>
+
+    <!-- Lost Mary 30k -->
+    <div class="vape-card">
+        <img src="https://i.imgur.com/BBpax4M.jpg" alt="Lost Mary 30k">
+        <h2>Lost Mary 30k</h2>
+        <p>30k puffs - $30.000</p>
+        <form action="https://formsubmit.co/vapesbeta@gmail.com" method="POST" onsubmit="showAlert()">
+            <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+            <input type="text" name="direccion" placeholder="Dirección completa" required>
+            <input type="tel" name="telefono" placeholder="Teléfono" required>
+            <input type="number" name="cantidad" placeholder="Cantidad" required>
+            <textarea name="comentario" placeholder="Comentario (opcional)"></textarea>
+            <input type="hidden" name="modelo" value="Lost Mary 30k">
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </div>
+
+</section>
+
+<footer>
+    <p>Instagram: <a href="https://instagram.com/betavapes.store" target="_blank" style="color:#7f5af0;">@betavapes.store</a></p>
+</footer>
+
+</body>
+</html>
