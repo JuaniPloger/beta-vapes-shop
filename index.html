@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vapes Beta Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Vapes Beta Shop Logo" />
+    </div>
+    <div class="cart-icon" onclick="toggleCart()">
+      🛒 <span id="cart-count">0</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="products" id="product-list">
+      <!-- Productos se cargarán aquí dinámicamente -->
+    </section>
+  </main>
+
+  <div class="cart" id="cart">
+    <h2>Carrito de Compras</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0</span></p>
+    <button onclick="checkout()">Finalizar Compra</button>
+  </div>
+
+  <a href="https://www.instagram.com/betavapes.store" class="instagram-icon" target="_blank">
+    <img src="instagram-icon.png" alt="Instagram" />
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
