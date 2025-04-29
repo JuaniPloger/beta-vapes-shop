@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beta Vapes Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Beta Vapes Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>¡Bienvenido a Beta Vapes Shop!</h1>
+    <p>Los mejores vapes al mejor precio 🔥</p>
+  </section>
+
+  <section id="productos" class="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="productos-grid">
+      <!-- Producto 1 -->
+      <div class="producto-card">
+        <img src="assets/producto1.jpg" alt="Lost Mary Mixer">
+        <h3>Lost Mary Mixer</h3>
+        <p>$19.000</p>
+        <button onclick="comprar('Lost Mary Mixer')">Comprar</button>
+      </div>
+      <!-- Producto 2 -->
+      <div class="producto-card">
+        <img src="assets/producto2.jpg" alt="Elfbar 40k">
+        <h3>Elfbar 40k</h3>
+        <p>$22.000</p>
+        <button onclick="comprar('Elfbar 40k')">Comprar</button>
+      </div>
+      <!-- Producto 3 -->
+      <div class="producto-card">
+        <img src="assets/producto3.jpg" alt="Vaporesso Xros">
+        <h3>Vaporesso Xros</h3>
+        <p>$24.000</p>
+        <button onclick="comprar('Vaporesso Xros')">Comprar</button>
+      </div>
+      <!-- Producto 4 -->
+      <div class="producto-card">
+        <img src="assets/producto4.jpg" alt="Dragbar B5000">
+        <h3>Dragbar B5000</h3>
+        <p>$20.000</p>
+        <button onclick="comprar('Dragbar B5000')">Comprar</button>
+      </div>
+      <!-- Producto 5 -->
+      <div class="producto-card">
+        <img src="assets/producto5.jpg" alt="Waka Smash">
+        <h3>Waka Smash</h3>
+        <p>$18.000</p>
+        <button onclick="comprar('Waka Smash')">Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <form id="formulario-contacto">
+      <input type="text" id="nombre" placeholder="Nombre" required>
+      <input type="email" id="email" placeholder="Correo Electrónico" required>
+      <textarea id="mensaje" placeholder="Escribe tu consulta aquí..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Botón flotante Instagram -->
+  <a href="https://www.instagram.com/tucuenta" class="instagram-float" target="_blank">
+    <img src="assets/instagram.png" alt="Instagram">
+  </a>
+
+  <footer>
+    <p>&copy; 2025 Beta Vapes Shop. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
